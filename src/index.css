@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-night text-white font-sans antialiased; }
+section { scroll-margin-top: 80px; }
+
+.text-gradient {
+  @apply bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-400 bg-clip-text text-transparent;
+}
+.glass { @apply bg-white/[0.04] border border-white/10 backdrop-blur-md; }
+
+/* Garis grid halus di latar */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+@keyframes blink { 50% { opacity: 0 } }
+.caret { animation: blink 1s steps(1) infinite; }
+
+@keyframes marquee { to { transform: translateX(-50%) } }
+.marquee { animation: marquee 30s linear infinite; }
+.marquee:hover { animation-play-state: paused; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0B0613; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#f472b6, #8b5cf6); border-radius: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto; }
+}
