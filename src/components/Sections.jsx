@@ -812,7 +812,7 @@ export function Contact() {
           title="Let's Work Together"
           subtitle="I'm open to internships and entry-level roles in Data Science, Data Analytics, and Data Engineering."
         />
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 [&>*]:min-w-0"">
           <Reveal>
             <form onSubmit={submit} className="rounded-3xl glass p-7 space-y-5">
               <h3 className="text-2xl font-bold text-gradient">
@@ -895,7 +895,7 @@ export function Contact() {
               </AnimatePresence>
             </form>
           </Reveal>
-          <div className="space-y-4">
+          <div className="space-y-4 min-w-0">
             {[
               {
                 Icon: Mail,
@@ -929,7 +929,7 @@ export function Contact() {
                     </div>
                     <div className="min-w-0">
                       <p className="text-xs text-slate-400">{t}</p>
-                      <p className="font-semibold truncate">{v}</p>
+                      <p className="font-semibold break-all">{v}</p>
                     </div>
                     {href && (
                       <ArrowRight className="ml-auto w-4 h-4 text-slate-500 group-hover:text-fuchsia-300 group-hover:translate-x-1 transition-all" />
