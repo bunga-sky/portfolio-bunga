@@ -29,7 +29,7 @@ export const profile = {
 };
 
 export const about = [
-  "Aku adalah mahasiswa Informatika di Universitas Negeri Padang yang memiliki minat besar di bidang Data Science dan Data Engineering.",
+  "Aku adalah mahasiswi Informatika di Universitas Negeri Padang yang memiliki minat besar di bidang Data Science dan Data Engineering.",
   "Aku menikmati seluruh proses pengolahan data: membersihkan dan menyiapkan data mentah, menganalisisnya dengan SQL dan Python, membuat dashboard yang membuat insight mudah dipahami, hingga mengembangkan model machine learning untuk menemukan pola dan memprediksi hasil.",
   "Bagiku, data yang baik adalah fondasi dari setiap keputusan yang cerdas. Saat ini aku terbuka untuk kesempatan magang dan posisi entry-level di bidang Data Science, Data Analytics, dan Data Engineering.",
 ];
