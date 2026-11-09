@@ -13,21 +13,15 @@ import {
   FaTable,
 } from "react-icons/fa6";
 
-// =======================================================
-// SEMUA ISI PORTOFOLIO ADA DI SINI.
-// Mau ganti teks, proyek, atau sertifikat? Cukup edit file ini.
-// =======================================================
-
 export const profile = {
   name: "Bunga Rahmadani",
   firstName: "Bunga",
   roles: ["Data Scientist", "Data Analyst", "Data Engineer"],
   tagline:
     "I turn messy, raw data into clean datasets, clear insights, and predictive models that help people make better decisions.",
-  // Ganti dengan foto kamu: taruh file di folder public, misal public/foto-profil.jpg
-  // lalu isi photo: '/foto-profil.jpg'
+
   photo: "/projects/foto-profil.jpeg",
-  cv: "/cv-bunga.pdf", // taruh CV di folder public dengan nama ini
+  cv: "/cv-bunga.pdf", 
   email: "bungarahmadani267@gmail.com",
   linkedin: "https://www.linkedin.com/in/bungarahmadani-ds",
   github: "https://github.com/bunga-sky",
@@ -55,6 +49,14 @@ export const projects = [
     tags: ["Google Sheets", "SQL", "Looker Studio", "Orange", "Random Forest"],
     github: "https://github.com/bunga-sky/supermarket-sales-analysis",
     demo: "https://datastudio.google.com/reporting/d468700f-54e9-4ed2-9754-85a3e787c4ca",
+  },
+  {
+    title: "E-Commerce Data Analysis & Interactive Dashboard",
+    description:
+      "Analisis end-to-end E-Commerce Public Dataset Brasil (96.000+ order delivered, 2017–2018): data wrangling, EDA, segmentasi pelanggan RFM, analisis geospasial, dan dashboard interaktif dengan filter tanggal & negara bagian. Top 10 kategori menyumbang 62,47% revenue, dan 97% pelanggan hanya membeli sekali.",
+    tags: ["Python", "Pandas", "Streamlit", "Folium", "RFM Analysis"],
+    github: "https://github.com/bunga-sky/proyek-analisis-data-ecommerce-dashboard",
+    demo: "https://bunga-sky-proyek-analisis-data-ecomme-dashboarddashboard-h9nlpm.streamlit.app",
   },
   {
     title: "Iris EDA Analysis",
@@ -93,6 +95,18 @@ export const certificates = [
     date: "Nov 2025",
     image: "/certificates/gematik.jpg",
     award: true,
+  },
+  {
+    title: "Belajar Fundamental Analisis Data",
+    date: "Nov 2026",
+    image: "/certificates/fundamental-analisis-data.jpg",
+    url: "https://www.dicoding.com/certificates/MRZMVYM53ZYQ",
+  },
+  {
+    title: "Belajar Machine Learning untuk Pemula",
+    date: "Oct 2026",
+    image: "/certificates/machine-learning-pemula.jpg",
+    url: "https://www.dicoding.com/certificates/KEXLM197YZG2",
   },
   {
     title: "Belajar Analisis Data untuk Pemula",
@@ -138,8 +152,6 @@ export const certificates = [
   },
 ];
 
-// Ikon: react-icons (Simple Icons = logo brand, Font Awesome = ikon umum)
-// Daftar ikon lengkap: https://react-icons.github.io/react-icons
 export const techStack = [
   { name: "Python", icon: FaPython, color: "#FFD43B" },
   { name: "SQL", icon: FaDatabase, color: "#F29111" },
